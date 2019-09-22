@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package miner;
+package fpgrowth;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -56,7 +56,7 @@ public class TransactionDatabase {
     
     public void growFPTree() {
         FPNode fpTree = new FPNode();
-        fpTree.freqItem = new FrequentItem("root", "-");
+        fpTree.setFreqItem(new FrequentItem("root", "-"));
         
         
         for (int i = 0; i < transactions.size(); i++) {

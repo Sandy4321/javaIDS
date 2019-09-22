@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package miner;
+package fpgrowth;
 
 /**
  *
@@ -23,7 +23,8 @@ public class FrequentItem implements Comparable<FrequentItem> {
     
     @Override
     public String toString() {
-        return "(" + this.label + ":=:" + this.value + ", " + this.frequency + ")";
+        //return "(" + this.label + ":=:" + this.value + ", " + this.frequency + ")";
+        return this.label + ":=:" + this.value;
     }
     
     @Override

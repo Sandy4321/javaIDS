@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package miner;
+package fpgrowth;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -9,8 +9,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
-import miner.FrequentItem;
-import miner.TransactionDatabase;
+import fpgrowth.FPGrowth;
+import fpgrowth.FrequentItem;
+import fpgrowth.TransactionDatabase;
 
 /**
  *
@@ -69,10 +70,14 @@ public class JavaIDS {
             System.out.println(freq + " --> " + hashM.get(freq));
         }
       
-        tDB.orderByFrequent(); 
-       
-        System.out.println(tDB);
+        tDB.orderByFrequent();
         
+        System.out.println(tDB);
+
+        FPGrowth fpGrowth = new FPGrowth(tDB);
+        fpGrowth.grow();
+       
+        System.out.println(fpGrowth.getTree());
         
     }
 

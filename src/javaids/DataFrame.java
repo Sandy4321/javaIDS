@@ -13,9 +13,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedList;
-import miner.FrequentItem;
-import miner.Transaction;
-import miner.TransactionDatabase;
+import fpgrowth.FrequentItem;
+import fpgrowth.Transaction;
+import fpgrowth.TransactionDatabase;
 
 /**
  *
@@ -44,6 +44,7 @@ public class DataFrame {
                 if (!headerRead) {
                     this.setHeader(data);
                     headerRead = true;
+                    continue;
                 }
                 
                 tempTransactions.add(data);
