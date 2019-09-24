@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import fpgrowth.FPGrowth;
 import fpgrowth.FrequentItem;
 import fpgrowth.TransactionDatabase;
+import rinterface.RInterface;
 
 /**
  *
@@ -78,6 +79,8 @@ public class JavaIDS {
         fpGrowth.grow();
        
         System.out.println(fpGrowth.getTree());
+        
+        
         
     }
 

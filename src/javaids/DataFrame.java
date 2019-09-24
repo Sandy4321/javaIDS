@@ -99,6 +99,12 @@ public class DataFrame {
         return mask;
     }
     
+    public boolean[] calculateConsequentCoverMask(ClassAssociationRule rule) {
+        rule.getConsequent();
+        
+        return new boolean[]{true, false};
+    }
+    
     public boolean[] calculateRuleCoverMask(ClassAssociationRule rule) {
         return calculateAntecedentCoverMask(rule);
     }
@@ -143,5 +149,20 @@ public class DataFrame {
         return transactions;
     }
 
+    /**
+     * @return the transactionCount
+     */
+    public int getTransactionCount() {
+        return transactionCount;
+    }
+
+    /**
+     * @return the variableCount
+     */
+    public int getVariableCount() {
+        return variableCount;
+    }
+
+    
     
 }

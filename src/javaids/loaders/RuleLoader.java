@@ -11,4 +11,12 @@ package javaids.loaders;
  */
 public class RuleLoader {
     
+    public RuleLoader() {
+        
+    }
+    
+    public void loadRules(String[][] ruleMatrix) {
+        System.out.println(ruleMatrix[1][1]);
+    }
+    
 }

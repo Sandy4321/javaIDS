@@ -55,6 +55,7 @@ public class ClassAssociationRule implements Comparable<ClassAssociationRule> {
         
         return overlap;
     }
+    
 
     /**
      * @return the antecedent
